@@ -16,5 +16,5 @@ jobs:
       - name: Mostra o diretório de trabalho
         run: pwd
       - name: Mostra o nome do repositório
-        run: echo "${{ github.repository }}"
+  run: echo "Nome do repositório: ${{ github.repository }}"
 
