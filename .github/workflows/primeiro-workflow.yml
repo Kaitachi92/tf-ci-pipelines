@@ -1,17 +1,19 @@
-name: Meu Primeiro Workflow de CI
+name : "Meu Primeiro Workflow de CI"
 on:
-  push:
-    branches:
-      - main
-
-
+    push:
+      branches: [ "main" ]
+    workflow_dispatch:
+    
+    
 jobs:
+
   primeiro-job:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Exibe RA e Nome
-        run: echo "RA: 6324505 - Kauã-Augusto"
-      - name: Mostra o diretório de trabalho
-        run: pwd
-      - name: Mostra o nome do repositório
-        run: echo "Nome do repositório: Kaitachi92/tf-ci-pipelines"
+     - name: Exibir RA e Nome
+       run: echo "6324505 - Kauã!"
+     - name: Mostra o diretório de trabalho
+       run: pwd
+     - name: Lista os arquivos no diretório home
+       run: echo "tf-ci-pipelines:" ${{ github.repository }}
