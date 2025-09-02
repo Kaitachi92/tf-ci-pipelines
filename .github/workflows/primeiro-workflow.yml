@@ -1,18 +1,16 @@
 name: Meu Primeiro Workflow de CI
-
 on:
   push:
     branches:
       - main
-    paths-ignore:
-      - '**/README.md'
+
 
 jobs:
-  meu-primeiro-job:
+  primeiro-job:
     runs-on: ubuntu-latest
     steps:
       - name: Exibe RA e Nome
-        run: echo "RA: 6324505 - Kauã Augusto"
+        run: echo "RA: 6324505 - Kauã-Augusto"
       - name: Mostra o diretório de trabalho
         run: pwd
       - name: Mostra o nome do repositório
