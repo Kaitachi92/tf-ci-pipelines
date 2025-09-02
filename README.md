@@ -5,6 +5,10 @@ Este projeto demonstra como criar um workflow simples de Integração Contínua 
 ## Objetivo
 Criar um pipeline que é executado automaticamente sempre que há um push para a branch `main`, exceto quando o commit altera apenas o arquivo `README.md`.
 
+## Informações do Aluno
+- **Nome:** Kauã Augusto
+- **RA:** 6324505
+
 ## Estrutura do Workflow
 O arquivo de workflow está localizado em `.github/workflows/primeiro-workflow.yml` e realiza as seguintes tarefas:
 
@@ -23,3 +27,4 @@ Após enviar o workflow para o GitHub, acesse a aba **Actions** do repositório 
 ---
 
 > Este projeto é parte do exercício de aula sobre CI pipelines com GitHub Actions.
+> Este arquivo não é incluído no pipeline de CI.
