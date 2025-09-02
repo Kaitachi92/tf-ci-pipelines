@@ -1,4 +1,5 @@
 name: Meu Primeiro Workflow de CI
+
 on:
   push:
     branches:
@@ -15,4 +16,4 @@ jobs:
       - name: Mostra o diretório de trabalho
         run: pwd
       - name: Mostra o nome do repositório
-        run: echo "Nome do repositório: tf-ci-pipelines"
+        run: echo "tf-ci-pipelines: ${{ github.repository }}"
