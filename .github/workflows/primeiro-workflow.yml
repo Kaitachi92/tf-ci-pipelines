@@ -16,4 +16,4 @@ jobs:
       - name: Mostra o diretório de trabalho
         run: pwd
       - name: Mostra o nome do repositório
-        run: echo "tf-ci-pipelines: ${{ github.repository }}"
+        run: echo "Nome do repositório: Kaitachi92/tf-ci-pipelines"
